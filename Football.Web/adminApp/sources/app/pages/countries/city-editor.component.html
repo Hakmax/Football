@@ -1,0 +1,29 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h4 class="modal-title">Изменение города</h4>
+        <button type="button" class="close" aria-label="Close" (click)="close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <form #form="ngForm">
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Наименование</label>
+                <input [(ngModel)]="editedCity.Name" required name="editedCityName"
+                       class="form-control" type="text" placeholder="Наименование" />
+            </div>
+
+            <div class="form-group">
+                <label>Латинское название</label>
+                <input type="text" class="form-control" required name="editedCityLatinName"
+                       placeholder="Латинское название" [(ngModel)]="editedCity.LatinName" />
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" (click)="close()">Отмена</button>
+            <button type="button" class="btn btn-primary" (click)="okClicked()" [disabled]="form.invalid">ОК</button>
+        </div>
+    </form>
+</div>
