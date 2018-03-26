@@ -15,6 +15,7 @@ namespace Football.Web.Data.Entities.Services
         public const string DbConnectionName = "FootballWebDbConnection";
         public IDbSet<City> Cities { get; set; }
         public IDbSet<Country> Countries { get; set; }
+        public IDbSet<Club> Clubs { get; set; }
         public IDbSet<Player> Players { get; set; }
         public IDbSet<Season> Seasons { get; set; }
         public IDbSet<Team> Teams { get; set; }

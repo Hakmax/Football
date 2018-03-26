@@ -3,12 +3,11 @@ import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { PagesComponent } from "./pages.component";
 import { PagesRoutingModule } from "./pages-routing.module";
-import { SharedService } from "./shared/shared.service";
+import { SharedAdminModule } from "./shared/shared-admin.module";
 
 @NgModule({
-    imports: [PagesRoutingModule, RouterModule, CommonModule],
-    declarations: [PagesComponent],
-    providers: [SharedService]
+    imports: [PagesRoutingModule, RouterModule, CommonModule, SharedAdminModule],
+    declarations: [PagesComponent]
 })
 export class PagesModule {
 

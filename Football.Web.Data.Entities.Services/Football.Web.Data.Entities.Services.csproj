@@ -111,6 +111,10 @@
     <Compile Include="Migrations\201803171438320_AdminChanges.Designer.cs">
       <DependentUpon>201803171438320_AdminChanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803191637483_Club.cs" />
+    <Compile Include="Migrations\201803191637483_Club.Designer.cs">
+      <DependentUpon>201803191637483_Club.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803171438320_AdminChanges.resx">
       <DependentUpon>201803171438320_AdminChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803191637483_Club.resx">
+      <DependentUpon>201803191637483_Club.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

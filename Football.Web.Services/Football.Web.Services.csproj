@@ -71,17 +71,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAdminUserService.cs" />
+    <Compile Include="IClubService.cs" />
     <Compile Include="ICountryService.cs" />
     <Compile Include="Implementations\Admin\AdminUserService.cs" />
+    <Compile Include="Implementations\Admin\ClubService.cs" />
     <Compile Include="Implementations\Admin\CountryService.cs" />
     <Compile Include="Implementations\UsersService.cs" />
     <Compile Include="IUsersService.cs" />
     <Compile Include="ModelsConfiguration.cs" />
     <Compile Include="Models\Admin\AdminUserContext.cs" />
+    <Compile Include="Models\Admin\Clubs\ClubPlain.cs" />
     <Compile Include="Models\Admin\Countries\City.cs" />
     <Compile Include="Models\Admin\Countries\Country.cs" />
     <Compile Include="Models\Admin\Countries\CountryDetails.cs" />
     <Compile Include="Models\Admin\Countries\CountryListItem.cs" />
+    <Compile Include="Models\Admin\Countries\CountryPlain.cs" />
     <Compile Include="Models\Admin\Users\AuthModel.cs" />
     <Compile Include="Models\Admin\Users\UserModel.cs" />
     <Compile Include="Models\Admin\Users\UserProfileModel.cs" />

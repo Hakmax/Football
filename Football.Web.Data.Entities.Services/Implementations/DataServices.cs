@@ -57,4 +57,11 @@ namespace Football.Web.Data.Entities.Services.Implementations
         {
         }
     }
+    internal class ClubDataService : DataServiceExtended<Club, int>, IClubDataService
+    {
+        public ClubDataService(FootballWebDbContext dbContext) : base(dbContext)
+        {
+        }
+    }
+
 }

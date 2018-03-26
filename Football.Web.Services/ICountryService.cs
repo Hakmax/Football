@@ -21,5 +21,6 @@ namespace Football.Web.Services
         City CreateCity(City city);
         City UpdateCity(City city);
         bool DeleteCity(int cityId);
+        List<CountryPlain> GetPlainCountries();
     }
 }

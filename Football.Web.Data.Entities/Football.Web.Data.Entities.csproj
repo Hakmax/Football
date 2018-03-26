@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Entity.cs" />
     <Compile Include="Football\City.cs" />
+    <Compile Include="Football\Club.cs" />
     <Compile Include="Football\Country.cs" />
     <Compile Include="Football\Images\ImageFolder.cs" />
     <Compile Include="Football\Images\ImageItem.cs" />

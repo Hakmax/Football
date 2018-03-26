@@ -1,0 +1,52 @@
+﻿<div *ngIf="editedClub">
+    <section class="content-header">
+        <h1>
+            {{club.Name}}
+        </h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">
+                <i class="fa fa-th-list"></i><a routerLink="../.."
+                                                [queryParams]="{country:club.Country.Id}">Клубы</a>
+            </li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col col-xl-12">
+                <div class="box">
+                    <form #form="ngForm">
+                        <div class="box-body">
+
+                            <div class="form-group">
+                                <label>Наименование</label>
+                                <input type="text" class="form-control"
+                                        name="editedClubName" required [(ngModel)]="editedClub.Name" />
+                            </div>
+                            <div class="form-group">
+                                <label>Страна</label>
+                                <select class="form-control" [(ngModel)]="editedClub.Country" name="ts">
+                                    <option *ngFor="let item of countries" [ngValue]="item">
+                                        {{item.Name}}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Дата основания</label>
+                                <input type="date" class="form-control" [ngModel]="editedClub.ClubCreationDate|date:'yyyy-MM-dd'"
+                                       (ngModelChange)="editedClub.ClubCreationDate=$event"
+                                        name="editedClubDate"/>
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <button class="btn btn-default" (click)="cancelClubChanges()">Отмена</button>
+                            <button class="btn btn-success pull-right" [disabled]="form.invalid">ОК</button>
+                        </div>
+                        <pre>{{editedClub|json}}</pre>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+

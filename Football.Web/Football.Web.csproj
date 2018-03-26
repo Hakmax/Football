@@ -203,12 +203,16 @@
     <Compile Include="Helpers\OwinHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebApi\Admin\AdminCotrollerBase.cs" />
+    <Compile Include="WebApi\Admin\ClubsApiController.cs" />
+    <Compile Include="WebApi\Admin\CommonApiController.cs" />
     <Compile Include="WebApi\Admin\CountriesApiController.cs" />
     <Compile Include="WebApi\Admin\UsersApiController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminApp\sources\app\app.component.html" />
     <Content Include="adminApp\sources\app\auth\auth.component.html" />
+    <Content Include="adminApp\sources\app\pages\clubs\club.editor.component.html" />
+    <Content Include="adminApp\sources\app\pages\clubs\clubs.component.html" />
     <Content Include="adminApp\sources\app\pages\countries\city-editor.component.html" />
     <Content Include="adminApp\sources\app\pages\countries\countries.component.html" />
     <Content Include="adminApp\sources\app\pages\countries\country-editor.component.html" />
@@ -391,6 +395,12 @@
     <TypeScriptCompile Include="adminApp\sources\app\common\common.module.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\common\services\common.service.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\common\services\userAuth.service.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\clubs\club.editor.component.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\clubs\clubs.component.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\clubs\clubs.module.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\clubs\models\club-listItem.model.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\clubs\models\club.model.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\clubs\services\clubs.service.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\countries\city-editor.component.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\countries\countries.component.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\countries\countries.module.ts" />
@@ -404,6 +414,8 @@
     <TypeScriptCompile Include="adminApp\sources\app\pages\pages.component.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\pages.module.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\shared\confirm-dialog.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\shared\services\shared-api.service.ts" />
+    <TypeScriptCompile Include="adminApp\sources\app\pages\shared\shared-admin.module.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\shared\shared.service.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\userProfile\models\user-profile.model.ts" />
     <TypeScriptCompile Include="adminApp\sources\app\pages\userProfile\user-profile.component.ts" />

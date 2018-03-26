@@ -33,4 +33,7 @@ namespace Football.Web.Data.Entities.Services
     public interface IApplicationUserDataService : IDataService<ApplicationUser>
     {
     }
+    public interface IClubDataService:IDataServiceExtended<Club, int>
+    {
+    }
 }

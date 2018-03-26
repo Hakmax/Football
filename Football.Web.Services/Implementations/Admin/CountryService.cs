@@ -97,6 +97,11 @@ namespace Football.Web.Services.Implementations.Admin
             return Mapper.Map<CountryDetails>(newCountry);
         }
 
+        public List<CountryPlain>GetPlainCountries()
+        {
+            return _countryDataService.Value.Query().ProjectTo<CountryPlain>().ToList();
+        }
+
         public City CreateCity(City city)
         {
             var newCity = Mapper.Map<Data.Entities.Football.City>(city);
